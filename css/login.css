@@ -1,0 +1,93 @@
+/*//Yash Panchal*/
+/*//front-end*/
+/*//Team members: Corey Abma, Zachary Propert*/
+/* CSS file that makes the form beautiful  */
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url("../img/njit_bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 0;
+}
+#cover{
+    background: rgba(0, 0, 0, 0.4); 
+    height: 100%;
+    width: 100%;
+}
+h2{
+    margin-top: -15px;
+    margin-bottom: 25px;
+    color: #f2f2f2;
+}
+input{
+    display: block;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin: 8px 0;
+    font-weight: bold;
+}
+#username, #password{
+    background: transparent;
+    border: none;
+    max-width: 300px;
+    border-bottom: 2px solid rgb(182, 182, 182);
+    height: 45px;
+    color: #f2f2f2;
+}
+::placeholder {
+    color: #f2f2f2;
+}
+:-ms-input-placeholder {
+    color: #f2f2f2;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #f2f2f2;
+}
+.form{
+    background: rgba(37, 37, 37, 0.9);
+    position: relative;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    /* padding: 15px; */
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+.login-box{
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+#result{
+    margin-top: 35px;
+    font-weight: bold;
+
+}
+#login-button  {
+    outline: 0;
+    background: #4CAF50;
+    width: 50%;
+    border: 0;
+    padding: 12px;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: -25px;
+    
+  }
+/*  */
