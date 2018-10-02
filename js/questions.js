@@ -2,11 +2,6 @@ var checked;
 var btns = document.getElementsByClassName("question-btn");
 
 
-
-
-var checkboxesChecked = [];
-
-  
 for(var i = 0; i< btns.length; i++){
     btns[i].addEventListener('click', function () {
         var checkboxes = document.getElementsByClassName("question-select");

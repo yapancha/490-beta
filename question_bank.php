@@ -10,12 +10,9 @@ include("navbar.php");
 ?>
 
 <div id = "question-content">
-    <div id = "question-create">
-        <input type="text" id="question-create-text">
-        <button id = "question-create-submit">submit</button>
-    </div>
+   
     <div id = "questions">
-            questions
+            <p class = "question-block-title">Questions</p>
             <div class = "question"><input type="checkbox" class = "question-select" value = "1"> 
                 <span>Create a python function add() that returns a + b
                 </span>
@@ -31,16 +28,23 @@ include("navbar.php");
        
     </div>
     
-    <div id = "add-button">
-        <button class = "question-btn">>></button>
-        <button class = "question-btn"><<</button>
+    <div id = "add-button-container">
+        <button id="question-add-all" class = "question-btn">>></button>
+        <button id="question-remove-all" class = "question-btn"><<</button>
     </div>
     
     <div id = "selected">
-        selected questions
-        <input type="text"><button>Submit test</button>
+        <p class = "question-block-title"> Selected Questions</p>
     </div>
    
+
+</div>
+<div id="question-add-or-make-exam">
+
+    <div id ="make-exam-container"></div>
+    <input type="text"><button>Submit test</button>
+
+
 
 </div>
 
