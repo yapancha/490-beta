@@ -1,0 +1,42 @@
+/* 
+Yash Panchal
+questions.css
+style-sheet for question-bank page 
+*/
+body{
+    color: white;
+    background-color: black;
+}
+#question-content{
+    text-align: center;
+}
+#questions, #selected{
+    border: 2px solid white;
+    display: inline-block;
+    width: 40%;
+    height: 60%;
+    overflow: hidden;
+    margin: auto;
+}
+#add-button{
+    display:inline-block;
+    align-content: center;
+    padding-top: -50px;
+}
+#add-button button{
+    display: block;
+    align-content: center;
+}
+.question{
+    border: 0.5px solid beige;
+    margin: 5px;
+    padding: 5px;
+}
+.selected-question{
+    border: 0.5px solid beige;
+    margin: 5px;
+    padding: 5px;
+}
+#question-create{
+    
+}

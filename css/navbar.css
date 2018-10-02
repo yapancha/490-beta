@@ -1,3 +1,8 @@
+/* 
+Yash Panchal
+questions.css
+style-sheet for Navigation bar 
+*/
 ul{
     list-style-type: none;
     margin: 0;
@@ -35,9 +40,11 @@ body{
     width: 100%;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.438);
     background-color:  rgba(0,0,0,0.8);
+    margin-bottom: 50px;
+    position: relative;
 }
 #content{
-    padding-top: 46px;
+    padding-top: 50px;
 }
 .active{
     color: A9A9A9;
