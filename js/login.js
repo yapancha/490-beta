@@ -21,25 +21,7 @@ document.getElementById("login-button").addEventListener("click", function (){
             if (this.readyState == 4 && this.status == 200) {
                 //document.getElementById("content").innerHTML =this.responseText;
                 var login = JSON.parse(this.responseText);
-                
-                if(login.njit == 1 && login.db == 0){
-                    
-                    njit.innerHTML = "<p>NJIT login sucessful</p>";
-                    njit.style.color = "green"; 
-                    db.innerHTML = "<p>Database login unsucessful</p>";
-                    db.style.color = "red";
-                    
-                }else if(login.njit == 0 && login.db == 1){
-                    njit.innerHTML = "<p>NJIT login unsucessful</p>";
-                    njit.style.color = "red"; 
-                    db.innerHTML = "<p>Database login sucessful</p>";
-                    db.style.color = "green";
-                }else{
-                    njit.innerHTML = "<p>NJIT login unsucessful</p>";
-                    njit.style.color = "red"; 
-                    db.innerHTML = "<p>Database login unsucessful</p>";
-                    db.style.color = "red";                
-                }
+      
             }
         };
         xhttp.open("POST", "login.php", true);

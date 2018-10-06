@@ -14,12 +14,12 @@ Navigation bar for the website
         <body>
             <div id = "navbar">
                 <ul>
-                    <li  id = "home"><a class = "active" href="">Home</a> </li>
-                    <li id = "question-bank"><a href="">Question Bank</a></li>
-                    <li id = "gradebook"><a href="">Exams</a></li>
-                    <li id = "logout"><a href="">Logout</a></li>
+                    <li  id = "home"><a class = "menu-item active"   href="navbar.php">Home</a> </li>
+                    <li id = "question-bank"><a href="question_bank.php" class = "menu-item">Question Bank</a></li>
+                    <li id = "gradebook"><a href="exams.php" class = "menu-item">Exams</a></li>
+                    <li id = "logout"><a href="index.html" class = "menu-item">Logout</a></li>
                 </ul>
             </div>
             
            
-
+            <script src="js/navbar.js"></script>
