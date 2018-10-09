@@ -28,37 +28,57 @@ Question-bank page to select and generate a test
 ?>
 
 <html>
+
+<link rel="stylesheet" href="css/question_bank.css">
 <div id = "question-content">
    
 
   <!-- load questions dynamically from database upon pageload -->
   <!-- container for the questions already created -->
     <div id = "questions">
-            <p class = "question-block-title">Questions</p>
+            <p class = "question-block-title">Question Bank</p>
 
             <?php        
                 $arr  = json_decode($result,true);  
-                foreach($arr as $question) { 
+                $questions = $arr["question_list"];
+                foreach($questions as $question) { 
 
-                   echo '<div class = "question"><input type="checkbox" class = "question-select" value = "' .$question["num"].'">';
+                   echo '<div class = "question">';
                    echo '<span>'.$question["summary"].'</span></div>';
                 }
-                echo "comin from Zach!"
             ?>
-            <button id = "question-create-button"><input type="text" id = "question-create-text">Create question</button>
 
        
     </div>
-    <!-- container for buttons in the middle -->
-    <div id = "add-button-container">
-        <button id="question-add-all" class = "question-btn">>></button>
-        <button id="question-remove-all" class = "question-btn"><<</button>
-    </div>
+ 
     
     <!-- container for selected questions -->
-    <div id = "selected">
-        <p class = "question-block-title"> Selected Questions</p>
-        <input type="text" id = "test-create-name"><button id = "test-create-button">Create test</button>
+    <div id = "question-create-container">
+        <p class = "question-block-title"> Create Question</p>
+        <form action="question_bank.php" id="question-create">
+            
+            Question: <input type="text"><br>
+            Function Name: <input type="text"><br>
+            Function Parameters: <input type="text"><br>
+            Test Cases: <select name="" id="number-test-cases" onchange = "getIndex()">
+                <option value="1">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
+            <div id = "question-test-cases">
+                
+            </div>
+
+            
+        </form>
 
     </div>
 
@@ -67,6 +87,6 @@ Question-bank page to select and generate a test
 <div id  = "rr" style = "color:white"></div>
 
     </body>
-    <script src="js/questions.js"></script>
+    <script src="js/question_bank.js"></script>
 
 </html>

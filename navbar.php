@@ -6,7 +6,6 @@ Navigation bar for the website
 <html>
     <head>
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
-    <link rel="stylesheet" href="css/questions.css">
 
     <title> Beta</title>
         

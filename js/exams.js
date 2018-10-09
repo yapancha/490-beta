@@ -11,10 +11,17 @@ for(var i = 0; i< btns.length; i++){
            // And stick the checked ones onto an array...
            if (checkboxes[i].checked) {
               var newDiv = document.createElement('div');
+              var ptDiv = document.createElement('input')
+              ptDiv.id = checkboxes[i].value;
+              ptDiv.size = "3";
               newDiv.className = "selected-question";
               newDiv.id = checkboxes[i].value;
-              newDiv.innerHTML = checkboxes[i].nextElementSibling.innerHTML
-              document.getElementById('selected').appendChild(newDiv);
+              
+               
+              document.getElementById('selected').appendChild( newDiv);
+              newDiv.innerHTML ='<input type="text" size = "3" placeholder = "pts"></input>  '+ 
+                                                    checkboxes[i].nextElementSibling.innerHTML
+
               checkboxes[i].parentElement.style.display = "none";
            }
            
@@ -44,7 +51,7 @@ document.getElementById("test-create-button").addEventListener("click",function 
            // var result = JSON.parse(this.responseText);
                 document.getElementById("rr").innerHTML = this.responseText;
                // console.log(JSON.parse(this.responseText));
-              //  console.log((this.responseText))
+               console.log((this.responseText))
         }
     };
 

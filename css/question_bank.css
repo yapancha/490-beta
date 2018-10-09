@@ -1,0 +1,80 @@
+/* 
+Yash Panchal
+questions.css
+style-sheet for question-bank page 
+*/
+body{
+    color: black;
+    background-color: white;
+}
+#question-content{
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+}
+#question-create-container{
+    background-color: rgb(255, 255, 250);
+    padding: 15px;
+}
+#questions{
+    background-color: rgb(248, 248, 237);
+    width: 70%;
+}
+#questions, #question-create-container,#add-button{
+    border: 2px solid rgb(255, 220, 220);
+    display: inline-block;
+    /* width: 45%; */
+    overflow: auto;
+    margin: auto;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 3px 3px  rgba(0, 0, 0, 0.459);
+}
+#question-create-container{
+     widows: 80%; 
+    height: 50%;
+}
+
+.question-block-title{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+#add-button button{
+    display: block;
+    align-content: center;
+
+}
+#question-add-all{
+    margin-bottom: 15px; 
+}
+
+.question{
+    border: 0.5px solid beige;
+    margin: 10px;
+    padding: 15px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.438);
+    font-size: 20px;
+}
+.selected-question{
+    border: 0.5px solid beige;
+    margin: 5px;
+    padding: 5px;
+}
+#question-add-or-make-exam{
+    border: 2px solid red;
+    width: 80%;
+    margin: auto;
+}
+#make-exam-container{
+    float: right;
+    display: inline;
+    
+}
+#create-exam-container{
+    float: left;
+    display: inline;
+}
